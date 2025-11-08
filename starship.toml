@@ -1,0 +1,78 @@
+format = """
+[░▒▓](#c792ea)\
+$os\
+[](bg:#82aaff fg:#c792ea)\
+$directory\
+[](fg:#82aaff bg:#c3e88d)\
+$git_branch\
+$git_status\
+[](fg:#c3e88d bg:#f07178)\
+$nodejs\
+$rust\
+$golang\
+$php\
+$python\
+[](fg:#f07178 bg:#292d3e)\
+$time\
+[ ](fg:#292d3e)\
+\n$character"""
+
+[os]
+disabled = false
+style = "bg:#c792ea fg:#292d3e"
+format = "[ $symbol ]($style)"
+
+[os.symbols]
+Fedora = "󰣛"
+
+[directory]
+style = "fg:#292d3e bg:#82aaff"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#c3e88d"
+format = '[[ $symbol $branch ](fg:#292d3e bg:#c3e88d)]($style)'
+
+[git_status]
+style = "bg:#c3e88d"
+format = '[[($all_status$ahead_behind )](fg:#292d3e bg:#c3e88d)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#f07178"
+format = '[[ $symbol ($version) ](fg:#292d3e bg:#f07178)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#f07178"
+format = '[[ $symbol ($version) ](fg:#292d3e bg:#f07178)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#f07178"
+format = '[[ $symbol ($version) ](fg:#292d3e bg:#f07178)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#f07178"
+format = '[[ $symbol ($version) ](fg:#292d3e bg:#f07178)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#f07178"
+format = '[[ $symbol ($version) ](fg:#292d3e bg:#f07178)]($style)'
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+style = "bg:#292d3e"
+format = '[[  $time ](fg:#89ddff bg:#292d3e)]($style)'
