@@ -1,0 +1,7 @@
+[user]
+	name = Scripted-G
+	email = 213876009+Scripted-G@users.noreply.github.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
