@@ -29,7 +29,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 ### Output configuration
 output DP-1 scale 1 position 0 0 mode 2560x1440@120Hz
 output DP-2 scale 1 position 2560 0 mode 2560x1440@120Hz
-output * bg /home/gabe/Pictures/wallpapers/fedora-anime-girl.jpg fill
+output * bg $HOME/Pictures/wallpapers/arch-linux-4k-wallpapers.png fill
 # Assign workspaces to monitors
 workspace 1 output DP-1
 workspace 2 output DP-2
@@ -50,10 +50,8 @@ client.focused_inactive #3b4261 #3b4261    #a9b1d6 #3b4261   #3b4261
 client.unfocused        #24283b #24283b    #565f89 #24283b   #24283b
 client.urgent           #f7768e #f7768e    #1a1b26 #f7768e   #f7768e
 
-
-### Screen Timeout/Sleep
-# exec swayidle -w timeout 900 'swaylock' before-sleep 'swaylock'  
-
+### Autostart Applications
+exec protonvpn-app
                     
 ### Key bindings
 #
@@ -83,14 +81,6 @@ client.urgent           #f7768e #f7768e    #1a1b26 #f7768e   #f7768e
     
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
-
-# Screenshots
-# Full Screenshots
-bindsym Print exec grim ~/Pictures/Screenshots/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')
-#Region Screenshot
-bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')
-#Region selection to clipboard
-bindsym Control+Shift+Print exec grim -g "$(slurp)" - | wl-copy
 
 # Alacritty Opacity
 for_window [app_id="Alacritty"] opacity 0.8
@@ -228,4 +218,11 @@ bindsym $mod+r mode "resize"
 # important to make the magic work. And if you want to learn the secret behind
 # the trick, it's all in the `wordexp(3)`.
 #
-include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
+# Waybar
+bar {
+    swaybar_command waybar
+}
+
+# Include local config.d
+include /etc/sway/config.d/*
+include ~/.config/sway/config.d/*
