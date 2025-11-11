@@ -23,7 +23,7 @@ style = "bg:#c792ea fg:#292d3e"
 format = "[ $symbol ]($style)"
 
 [os.symbols]
-Fedora = "󰣛"
+Arch = "󰣇"
 
 [directory]
 style = "fg:#292d3e bg:#82aaff"
