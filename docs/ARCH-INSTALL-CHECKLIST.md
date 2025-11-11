@@ -26,7 +26,7 @@ cd dotfiles
 
 ### 2. Install All Official Packages
 ```bash
-sudo pacman -S --needed $(cat user-installed-packages.txt)
+sudo pacman -S --needed $(cat packages/official-packages.txt)
 ```
 
 **Key packages include:**
@@ -54,8 +54,7 @@ rm -rf paru
 
 ### 4. Install AUR Packages
 ```bash
-paru -S brave-bin google-chrome visual-studio-code-bin spotify \
-        mu-editor xpadneo-dkms sway-systemd wdisplays mediawriter
+paru -S $(cat packages/aur-packages.txt)
 ```
 
 **AUR Package Notes:**
@@ -67,17 +66,18 @@ paru -S brave-bin google-chrome visual-studio-code-bin spotify \
 ### 5. Apply Dotfiles
 ```bash
 cd ~/dotfiles
+
 # Copy configs
-cp -r alacritty waybar rofi fastfetch swaylock ~/.config/
-cp -r sway/* ~/.config/sway/
-cp -r qt5ct qt6ct gtk-3.0 ~/.config/
-cp .bashrc .bash_profile ~/
-cp starship.toml ~/.config/
+cp -r configs/alacritty configs/waybar configs/rofi configs/fastfetch configs/swaylock ~/.config/
+cp -r configs/sway ~/.config/
+cp -r configs/qt5ct configs/qt6ct configs/gtk-3.0 ~/.config/
+cp shell/.bashrc shell/.bash_profile ~/
+cp shell/starship.toml ~/.config/
 cp .gitconfig ~/
 
 # Setup wallpaper
 mkdir -p ~/Pictures/wallpapers
-cp arch-linux-4k-wallpapers.png ~/Pictures/wallpapers/
+cp assets/arch-linux-4k-wallpapers.png ~/Pictures/wallpapers/
 ```
 
 ### 6. Setup Git SSH Keys
