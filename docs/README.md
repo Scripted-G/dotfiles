@@ -1,6 +1,10 @@
 # My Dotfiles
 My personal Linux configuration files for Sway window manager on Arch Linux.
 
+## Why Arch + Sway
+
+I chose Arch Linux for hands-on learning—the manual installation and configuration process builds deeper understanding of how Linux systems work. Sway provides a lightweight, keyboard-driven Wayland compositor that keeps my workflow fast and distraction-free.
+
 ## Contents
 
 ### Sway Configuration
