@@ -28,8 +28,8 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 
 ### Output configuration
 output DP-1 scale 1 position 0 0 mode 2560x1440@120Hz
-output DP-2 scale 1 position 2560 0 mode 2560x1440@120Hz
-output * bg $HOME/Pictures/wallpapers/arch-linux-4k-wallpapers.png fill
+output DP-2 scale 1 position 2560 -275 mode 2560x1440@120Hz transform 90
+output * bg $HOME/Pictures/Wallpapers/arch-linux-4k-wallpapers.png fill
 # Assign workspaces to monitors
 workspace 1 output DP-1
 workspace 2 output DP-2

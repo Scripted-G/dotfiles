@@ -1,0 +1,11 @@
+output * bg /usr/share/backgrounds/arch-linux-4k-wallpapers.png fill
+output DP-1 scale 1 position 0 0 mode 2560x1440@120Hz
+output DP-2 scale 1 position 2560 -275 mode 2560x1440@120Hz transform 90
+
+exec "nwg-hello; swaymsg exit"
+
+bindsym Mod4+shift+e exec swaynag \
+	-t warning \
+	-m 'What do you want to do?' \
+	-b 'Poweroff' 'systemctl poweroff' \
+	-b 'Reboot' 'systemctl reboot'

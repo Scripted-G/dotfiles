@@ -25,3 +25,4 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 eval "$(starship init bash)"
+alias ls='ls --color=auto'

@@ -155,6 +155,7 @@
       }
     },
     "network": {
+        "interface": "enp8s0",
         "format-wifi": "󰖩",
         "format-ethernet": "󰈀",
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
