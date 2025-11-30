@@ -2,8 +2,6 @@ arc-gtk-theme
 brave-bin
 mediawriter
 mu-editor
-paru
-paru-debug
 qpdfview
 spotify
 sway-systemd
