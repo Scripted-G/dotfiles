@@ -90,7 +90,8 @@ Install AUR helper (if not installed):
 ```bash
 sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git /tmp/paru
-cd /tmp/paru && makepkg -si
+cd /tmp/paru
+makepkg -si
 ```
 
 Install AUR packages:
