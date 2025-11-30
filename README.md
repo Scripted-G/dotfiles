@@ -122,7 +122,6 @@ cp -r ~/dotfiles/configs/fastfetch ~/.config/
 ```bash
 cp ~/dotfiles/shell/.bashrc ~/
 cp ~/dotfiles/shell/.bash_profile ~/
-cp ~/dotfiles/shell/.gitconfig ~/
 cp ~/dotfiles/shell/starship.toml ~/.config/
 ```
 
