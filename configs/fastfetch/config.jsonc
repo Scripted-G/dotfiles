@@ -34,7 +34,14 @@
     {
       "type": "uptime",
       "key": "│ ● Uptime",
-      "keyColor": "cyan"
+      "keyColor": "cyan",
+      "format": "{1}d {2}h {3}m"
+    },
+    {
+      "type": "command",
+      "key": "│ ● Age",
+      "keyColor": "cyan",
+      "text": "bash -c 'install=$(date -d \"$(head -1 /var/log/pacman.log | sed \"s/\\[\\([^]]*\\)\\].*/\\1/\")\" +%s); now=$(date +%s); diff=$((now-install)); printf \"%dd %dh %dm\" $((diff/86400)) $(((diff%86400)/3600)) $(((diff%3600)/60))'"
     },
     {
       "type": "custom",
