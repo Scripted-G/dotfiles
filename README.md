@@ -2,14 +2,13 @@
 
 > **Note:** This repository documents my previous Arch Linux daily driver 
 > setup, preserved as a complete reference. The configuration is fully 
-> documented and replicable. My current host system is Windows 11 IoT 
-> Enterprise LTSC.
+> documented and replicable. My current host system is Debian 13 Trixie
 
 Personal configuration files for my Arch Linux setup with Sway window manager.
 
 ## Hardware
 - **CPU**: AMD Ryzen 9 9900X
-- **GPU**: NVIDIA GeForce RTX 5070 Ti
+- **GPU**: AMD rx 9070 XT
 - **RAM**: 64GB DDR5
 - **Monitor**: ASUS ProArt PA278CGV 27" 1440p @ 120Hz
 
