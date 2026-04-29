@@ -8,7 +8,7 @@ Personal configuration files for my Arch Linux setup with Sway window manager.
 
 ## Hardware
 - **CPU**: AMD Ryzen 9 9900X
-- **GPU**: AMD rx 9070 XT
+- **GPU**: NVIDIA 5070 Ti
 - **RAM**: 64GB DDR5
 - **Monitor**: ASUS ProArt PA278CGV 27" 1440p @ 120Hz
 
