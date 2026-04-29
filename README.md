@@ -47,10 +47,9 @@ Personal configuration files for my Arch Linux setup with Sway window manager.
     │   ├── snapper/            # BTRFS snapshot configs
     │   ├── modprobe/           # Kernel module options
     │   └── grub-btrfs/         # GRUB snapshot boot entries
-    ├── packages/
-    │   ├── official-packages.txt
-    │   └── aur-packages.txt
-    └── docs/                    # Additional documentation
+    └── packages/
+        ├── official-packages.txt
+        └── aur-packages.txt
 
 ## Installation
 
