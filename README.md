@@ -1,8 +1,7 @@
 # Arch Linux + Sway Dotfiles
 
-> **Note:** This repository documents my previous Arch Linux daily driver 
-> setup, preserved as a complete reference. The configuration is fully 
-> documented and replicable. My current host system is Debian 13 Trixie
+> **Note:** This repository documents an Arch Linux + Sway setup. 
+> Installation steps below are Arch-specific. Current host system: Fedora 44.
 
 Personal configuration files for my Arch Linux setup with Sway window manager.
 
@@ -16,10 +15,10 @@ Personal configuration files for my Arch Linux setup with Sway window manager.
 - **Window Manager**: Sway
 - **Bar**: Waybar
 - **Terminal**: Alacritty
-- **Shell**: Bash + Starship prompt
+- **Shell**: Bash + Starship
 - **Launcher**: Rofi
 - **Greeter**: greetd + nwg-hello
-- **Lock Screen**: swaylock
+- **Lock Screen**: Swaylock
 - **Theme**: Tokyo Night
 - **Filesystem**: BTRFS with Snapper snapshots
 - **Bootloader**: GRUB with grub-btrfs
@@ -98,12 +97,7 @@ mkdir -p ~/.config
 
 ### 4. Copy User Configs
 ```bash
-cp -r ~/dotfiles/configs/sway ~/.config/
-cp -r ~/dotfiles/configs/waybar ~/.config/
-cp -r ~/dotfiles/configs/alacritty ~/.config/
-cp -r ~/dotfiles/configs/rofi ~/.config/
-cp -r ~/dotfiles/configs/swaylock ~/.config/
-cp -r ~/dotfiles/configs/fastfetch ~/.config/
+cp -r ~/dotfiles/configs/{sway,waybar,alacritty,rofi,swaylock,fastfetch} ~/.config/
 ```
 
 ### 5. Copy Shell Configs
@@ -167,12 +161,12 @@ archinstall uses the "removable" EFI boot method which breaks default prefix
 detection.
 
 ### Xbox Controller (Bluetooth)
+Driver and Bluetooth configuration:
 ```bash
 paru -S xpadneo-dkms
 sudo cp ~/dotfiles/system/modprobe/bluetooth.conf /etc/modprobe.d/
 ```
-
-**Steam Settings:**
+After installing the driver, also configure Steam to avoid input conflicts:
 - "Enable Steam Input for Xbox controllers": OFF
 - "Guide button focuses Steam": OFF
 
