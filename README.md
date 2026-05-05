@@ -1,9 +1,5 @@
-# Arch Linux + Sway Dotfiles
-
-> **Note:** This repository documents an Arch Linux + Sway setup. 
-> Installation steps below are Arch-specific. Current host system: Fedora 44.
-
-Personal configuration files for my Arch Linux setup with Sway window manager.
+##About
+This is a personal Arch Linux + Sway setup built around a few priorities: a clean tiling workflow that gets out of the way during long focused work, a coherent visual aesthetic (Tokyo Night across the stack), and a robust foundation with BTRFS snapshots so I can experiment without fear of breaking the system. The configs are modular where it helps and minimal where it doesn't — I prefer understanding what each line does over copying large config blobs from elsewhere. Documented here for my own reference and for anyone who wants to use parts of it as a starting point for their own setup.
 
 ## Hardware
 - **CPU**: AMD Ryzen 9 9900X
