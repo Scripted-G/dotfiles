@@ -16,6 +16,11 @@ Because Arch Linux and its packages continue to evolve, some configuration detai
 
 ## Hardware Used With This Setup
 
+- **CPU:** AMD Ryzen 9 9900X
+- **GPU:** NVIDIA GeForce RTX 5070 Ti
+- **RAM:** 64 GB DDR5
+- **Monitor:** ASUS ProArt PA278CGV — 27", 2560×1440, 120 Hz
+
 The Arch + Sway environment documented in this repository was used with the following hardware:
 
 ## Overview
