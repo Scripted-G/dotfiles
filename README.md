@@ -60,6 +60,8 @@ The Arch + Sway environment documented in this repository was used with the foll
 
 ## Installation
 
+**Historical reference:** The following steps document how this Arch + Sway environment was installed and configured when it was in active use. They have not been maintained as current Arch Linux installation instructions and may require adjustment on newer systems.
+
 ### Prerequisites
 - Arch Linux installed with Sway
 - BTRFS filesystem (recommended)
@@ -219,4 +221,5 @@ sudo usermod -aG libvirt,kvm $USER
    initializing dual monitors with rotation.
 
 ## License
-These are my personal dotfiles. Feel free to use and modify for your own setup.
+
+This project is licensed under the MIT License. See `LICENSE` for details.
