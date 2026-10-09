@@ -8,9 +8,7 @@ The repository is preserved both as a personal reference and as an example of th
 
 ## Status
 
-This setup is no longer my active daily-driver environment.
-
-My current workstation runs **Ubuntu 26.04 LTS**, but these files document the Arch Linux + Sway configuration I previously used in daily operation. The repository is being kept as a historical reference and portfolio project rather than as an actively maintained Arch configuration.
+This setup is no longer my active daily-driver environment. My current workstation runs Windows 11 Pro, with a VMware Workstation Pro homelab. This repository is kept as a historical reference and portfolio project rather than an actively maintained Arch configuration.
 
 Because Arch Linux and its packages continue to evolve, some configuration details or installation steps may require adjustment on newer systems.
 
